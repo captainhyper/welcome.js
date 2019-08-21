@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
-setInterval(() => {
+setInterval(() => 
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
 
@@ -41,15 +41,15 @@ client.on('message', message => {
 client.on('guildMemberAdd', (guildMember, channel, message) => {
     let embed = new Discord.RichEmbed()
         .setAuthor("WELCOME", `${guildMember.user.displayAvatarURL}`)
-        .setDescription('**Welcome To Trivia Home ! Its nice to have you here !Enjoy your winnings here! Be sure to enjoy your stay here!!!** :wink: ' + guildMember.user.username + '**' + " **has joined this server.**")
+        .setDescription('**Welcome To Trivia Savage Pro ! Its nice to have you here !Enjoy your winnings here! Be sure to enjoy your stay here!!!** :wink: ' + guildMember.user.username + '**' + " **has joined this server.**")
         .setColor("RANDOM")
-        .setFooter("Made ❤️ By MR.~ARMAN§#1033")
-     client.channels.get('527755523223846915').send(embed);
+        .setFooter("Made With ❤ by CAPTAIN COOL#0044")
+     client.channels.get('594117334680207371').send(embed);
 });
 
 client.on('guildMemberRemove', (guildMember, channel, message) => {
     let embed = new Discord.RichEmbed()
-        .setAuthor("Trivia Home Bot", `${guildMember.user.displayAvatarURL}`)
+        .setAuthor("TRIVIA SAVAGE PRO", `${guildMember.user.displayAvatarURL}`)
         .setDescription('**' + guildMember.user.username + '**' + " has left this server.")
         .setColor("#9442FF")
         .setFooter("Left User")
@@ -58,7 +58,7 @@ client.on('guildMemberRemove', (guildMember, channel, message) => {
 });
 
 client.on('guildMemberAdd', member => {
-   member.send("Hello and welcome to our server **Trivia Home**, we are giving daily loco 10/10 accuracy with fast answer. also we are giving best brain baazi answer. all will get you only this at Rs.20 only. if you have any problems contact OWNER VARUN SINGHAL");
+   member.send("Hello and welcome to our server **TRIVIA SAVAGE | PRO**, we are giving answers of all trivia games with best accuracy with fast answer. also we are giving International answer. if you need any help contact OWNER CAPTAIN COOL");
 });
 
 client.on('ready', () => {
